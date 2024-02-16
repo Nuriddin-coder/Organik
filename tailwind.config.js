@@ -5,7 +5,7 @@ export default {
     extend: {
       container: {
         screens: {
-          lg: "1240px",
+          lg: "1340px",
         },
         center: true,
         padding: "20px",
@@ -23,6 +23,9 @@ export default {
         fortressGrey: "#B8B8B8",
         silverLake: "#DEDDDD",
         weatheredStone: "#C4C4C4",
+        organicBgClr: "#F1F8F4",
+        discoBall: "#D5D5D5",
+        mediaBgClr: "#EFF6F1",
       },
       screens: {
         tablet: "670px",
