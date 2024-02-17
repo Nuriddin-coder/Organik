@@ -20,7 +20,7 @@ export const ShopInner = () => {
   return (
     <section>
       <div className="bg-[url('./assets/imgs/product-inner-hero-img.png')] bg-cover bg-center bg-no-repeat">
-        <MainHero title="Product Single" />
+        <MainHero title="Shop Single" />
       </div>
       <div className="container pb-[45px]">
         {result.map((item) => (
