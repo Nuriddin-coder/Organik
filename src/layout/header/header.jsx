@@ -14,13 +14,13 @@ import { Drawer } from "../../components/Drawer";
 
 export const Header = () => {
   return (
-    <section className="tablet:pb-[50px] pb-[40px] pt-[10px]">
+    <section className="pb-[40px] pt-[10px] tablet:pb-[50px]">
       <div className="container">
         <div className="flex items-center justify-between">
-          <div>
+          <NavLink to="/">
             <LogoIcon />
-          </div>
-          <ul className="desktop:flex hidden gap-[30px]">
+          </NavLink>
+          <ul className="hidden gap-[30px] desktop:flex">
             {Links.map((link) => (
               <>
                 <li key={link.path}>
@@ -35,7 +35,7 @@ export const Header = () => {
             ))}
           </ul>
           <div className="flex items-center gap-[20px]">
-            <div className="bg-drWhite tablet:flex mx-auto hidden max-w-[241px] items-center rounded-full py-[3px] pl-[12px]">
+            <div className="mx-auto hidden max-w-[241px] items-center rounded-full bg-drWhite py-[3px] pl-[12px] tablet:flex">
               <input
                 className="h-[30px] bg-transparent outline-none"
                 type="text"
@@ -48,7 +48,7 @@ export const Header = () => {
               <NavLink className="block rounded-full bg-red-900 pb-[8px] pl-[8px] pr-[10px] pt-[10px]">
                 <BagIcon />
               </NavLink>
-              <span className="tablet:flex hidden items-center gap-1">
+              <span className="hidden items-center gap-1 tablet:flex">
                 <p className="text-[12px] font-semibold text-primary">Card</p>
                 <p className="text-[12px] font-semibold text-primary">(0)</p>
               </span>
@@ -59,7 +59,7 @@ export const Header = () => {
           </div>
         </div>
 
-        <div className="bg-drWhite tablet:hidden mx-auto flex max-w-[241px] items-center rounded-full py-[3px] pl-[12px]">
+        <div className="mx-auto flex max-w-[241px] items-center rounded-full bg-drWhite py-[3px] pl-[12px] tablet:hidden">
           <input className="h-[30px] bg-transparent outline-none" type="text" />
           <NavLink className="rounded-full bg-secondary p-[10px]">
             <SearchIcon />

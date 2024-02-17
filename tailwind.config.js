@@ -26,6 +26,7 @@ export default {
         organicBgClr: "#F1F8F4",
         discoBall: "#D5D5D5",
         mediaBgClr: "#EFF6F1",
+        coronation: "#ECECEC",
       },
       screens: {
         tablet: "670px",

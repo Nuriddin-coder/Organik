@@ -1,24 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-//// Import Component's :
+//// Import Component's:
 import { Raiting } from "../../Rating-star";
 
-export const OurProductCard = ({
-  title,
-  price,
-  salePrice,
-  img,
-  id,
-  productType,
-}) => {
+export const ShopCard = ({ price, salePrice, productType, id, img, title }) => {
   return (
     <Link
-      to={`/product/${id}`}
+      to={`/shop/${id}`}
       className="flex h-[380px] w-[280px] flex-col items-center justify-start rounded-lg bg-doctor pb-[15px] pt-[40px]"
     >
       <div className="relative">
-        <img className="h-auto max-w-[250px]" src={img} alt="img" />
+        <img className="h-[250px] max-w-[300px]" src={img} alt="img" />
         <p className="absolute top-[-20px] inline rounded-[8px] bg-primary px-[12px] py-[6px] text-white">
           {productType}
         </p>
