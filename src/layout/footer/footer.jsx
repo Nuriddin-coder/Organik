@@ -23,7 +23,8 @@ export const Footer = () => {
           </div>
           <div className="desktop:flex desktop:gap-[25px] ">
             <input
-              className="mx-auto mb-[15px] w-[250px] rounded-[14px] px-[15px] py-[12px] outline-none tablet:w-[350px] desktop:m-0"
+              placeholder="Your Email Address"
+              className="text-inputPlcholderClr mx-auto mb-[15px] w-[250px] rounded-[14px] px-[15px] py-[12px] outline-none tablet:w-[350px] desktop:m-0"
               type="text"
             />
             <Buttons variant="primary">Subsribe</Buttons>

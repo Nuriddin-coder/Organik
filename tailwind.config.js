@@ -27,6 +27,7 @@ export default {
         discoBall: "#D5D5D5",
         mediaBgClr: "#EFF6F1",
         coronation: "#ECECEC",
+        inputPlcholderClr: "#ABABAB",
       },
       screens: {
         tablet: "670px",
