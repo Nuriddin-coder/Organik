@@ -15,8 +15,8 @@ import { Drawer } from "../../components/Drawer";
 export const Header = () => {
   return (
     <section className="pb-[40px] pt-[10px] tablet:pb-[50px]">
-      <div className="container">
-        <div className="flex items-center justify-between">
+      <div>
+        <div className="bg-fixedBgClr container desktop:shadow-none fixed top-0 z-10 mx-auto flex min-w-[330px] items-center justify-between py-[5px] shadow-xl desktop:relative desktop:bg-transparent">
           <NavLink to="/">
             <LogoIcon />
           </NavLink>
@@ -34,7 +34,7 @@ export const Header = () => {
               </>
             ))}
           </ul>
-          <div className="flex items-center gap-[20px]">
+          <div className=" flex items-center gap-[20px]">
             <div className="mx-auto hidden max-w-[241px] items-center rounded-full bg-drWhite py-[3px] pl-[12px] tablet:flex">
               <input
                 className="h-[30px] bg-transparent outline-none"
@@ -58,12 +58,18 @@ export const Header = () => {
             </span>
           </div>
         </div>
-
-        <div className="mx-auto flex max-w-[241px] items-center rounded-full bg-drWhite py-[3px] pl-[12px] tablet:hidden">
-          <input className="h-[30px] bg-transparent outline-none" type="text" />
-          <NavLink className="rounded-full bg-secondary p-[10px]">
-            <SearchIcon />
-          </NavLink>
+      </div>
+      <div className="container relative">
+        <div className="pt-[70px] desktop:p-0">
+          <div className="mx-auto flex max-w-[241px] items-center rounded-full bg-drWhite py-[3px] pl-[12px] tablet:hidden">
+            <input
+              className="h-[30px] bg-transparent outline-none"
+              type="text"
+            />
+            <NavLink className="rounded-full bg-secondary p-[10px]">
+              <SearchIcon />
+            </NavLink>
+          </div>
         </div>
       </div>
     </section>

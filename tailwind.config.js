@@ -30,6 +30,7 @@ export default {
         inputPlcholderClr: "#ABABAB",
         notFoungBg: "#E3F1E9",
         notFoundNumClr: "#8FA8A8",
+        fixedBgClr: "#f6efef"
       },
       screens: {
         tablet: "670px",
