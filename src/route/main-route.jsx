@@ -1,6 +1,7 @@
 import { Home } from "../pages/Home";
 import { About } from "../pages/About";
 import { Shop } from "../pages/Shop";
+import { News } from "../pages/News";
 
 export const pages = [
   {
@@ -16,5 +17,10 @@ export const pages = [
     id: 3,
     components: <Shop />,
     path: "/shop",
+  },
+  {
+    id: 4,
+    components: <News />,
+    path: "/news",
   },
 ];

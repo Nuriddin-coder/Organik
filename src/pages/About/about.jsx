@@ -25,9 +25,12 @@ import { AboutOfferData } from "../../data/about-offer-data";
 export const About = () => {
   return (
     <div>
+      {/* Hero */}
       <div className="bg-[url('./assets/imgs/main-about-us-hero-img.png')] bg-cover bg-center bg-no-repeat">
         <MainHero title="About Us" />
       </div>
+
+      {/* About Us */}
       <section className="py-[80px]">
         <div className="container desktop:flex desktop:items-center desktop:justify-center desktop:gap-[65px]">
           <img
@@ -74,6 +77,8 @@ export const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Choose Us */}
       <section className=" bg-doctor pb-[120px] pt-[90px]">
         <div className="container desktop:flex desktop:flex-row-reverse desktop:items-center desktop:justify-center desktop:gap-[45px]">
           <img
@@ -121,7 +126,9 @@ export const About = () => {
           ))}
         </div>
       </section>
-      <section>
+
+      {/* Team */}
+      <section className="pt-[40px]">
         <div className="container">
           <div className="text-center">
             <p className="font-yellowtail text-[20px] text-fontClr tablet:text-[24px] desktop:text-[30px]">
@@ -143,10 +150,12 @@ export const About = () => {
           </div>
         </div>
       </section>
+
+      {/* About Offer */}
       <section className="bg-primary py-[100px]">
         <div className="container">
           <div className="text-center">
-            <p className="font-yellowtail text-[20px] text-fontClr">About Us</p>
+            <p className="font-yellowtail text-[20px] tablet:text-[24px] desktop:text-[28px] text-fontClr">About Us</p>
             <h2 className="text-[24px] font-bold text-white">
               What We Offer for You
             </h2>

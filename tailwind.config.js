@@ -28,6 +28,8 @@ export default {
         mediaBgClr: "#EFF6F1",
         coronation: "#ECECEC",
         inputPlcholderClr: "#ABABAB",
+        notFoungBg: "#E3F1E9",
+        notFoundNumClr: "#8FA8A8",
       },
       screens: {
         tablet: "670px",

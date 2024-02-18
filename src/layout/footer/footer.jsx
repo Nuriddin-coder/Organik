@@ -15,9 +15,9 @@ export const Footer = () => {
   return (
     <div>
       <section className="mb-[40px] px-[20px] py-[85px]">
-        <div className="container rounded-2xl bg-[url('./assets/imgs/subscribe-bg-img.png')] bg-cover bg-center bg-no-repeat px-[20px] py-[60px] desktop:flex desktop:items-center desktop:justify-between">
+        <div className="container rounded-2xl bg-[url('./assets/imgs/subscribe-bg-img.png')] bg-cover bg-center bg-no-repeat py-[60px] desktop:flex desktop:items-center desktop:justify-between desktop:px-[80px]">
           <div>
-            <h2 className="mb-[35px] text-[24px] font-bold text-white tablet:text-[34px] desktop:mt-[30px]">
+            <h2 className="mb-[35px] text-[24px] font-bold text-white tablet:text-[34px] desktop:mt-[30px] desktop:max-w-[250px]">
               Subscribe to our Newsletter
             </h2>
           </div>

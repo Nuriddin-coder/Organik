@@ -5,6 +5,8 @@ import { pages } from "./route/main-route";
 //// Import Component's:
 import { ProductInner } from "./pages/ProductInner";
 import { ShopInner } from "./pages/Shop/ShopInner";
+import { NotFound } from "./pages/NotFound";
+import { OfferInner } from "./pages/OfferInner";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
 
         <Route path="/product/:id" element={<ProductInner />} />
         <Route path="/shop/:id" element={<ShopInner />} />
+        <Route path="/offer/:id" element={<OfferInner />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );

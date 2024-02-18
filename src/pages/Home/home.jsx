@@ -28,12 +28,12 @@ export const Home = () => {
   return (
     <div>
       {/* HERO Section */}
-      <section className="tablet:py-[120px] desktop:py-[150px] bg-[url('./assets/imgs/home-hero-bg.jpg')] bg-cover bg-center bg-no-repeat py-[90px]">
+      <section className="bg-[url('./assets/imgs/home-hero-bg.jpg')] bg-cover bg-center bg-no-repeat py-[90px] tablet:py-[120px] desktop:py-[150px]">
         <div className="container">
-          <p className="font-yellowtail text-fontClr tablet:text-[25px] desktop:text-[30px] text-[20px]">
+          <p className="font-yellowtail text-[20px] text-fontClr tablet:text-[25px] desktop:text-[30px]">
             100% Natural Food
           </p>
-          <h1 className="tablet:text-[40px] tablet:max-w-[295px] desktop:text-[48px] desktop:max-w-[350px] mb-[23px] max-w-[330px] text-[32px] font-bold text-primary">
+          <h1 className="mb-[23px] max-w-[330px] text-[32px] font-bold text-primary tablet:max-w-[295px] tablet:text-[40px] desktop:max-w-[350px] desktop:text-[48px]">
             Choose the best healthier way of life
           </h1>
           <Buttons variant="secondary">
@@ -45,20 +45,20 @@ export const Home = () => {
 
       {/* Sale Cards */}
       <section className="py-[100px]">
-        <div className="tablet:flex tablet:items-center container gap-[20px]">
+        <div className="container gap-[20px] tablet:flex tablet:items-center">
           <div className="mb-[20px] w-full rounded-[25px] bg-[url('./assets/imgs/sale-img.png')] bg-cover bg-center bg-no-repeat py-[80px] pl-[15px]">
-            <p className="font-yellowtail desktop:text-[26px] text-[20px] text-white">
+            <p className="font-yellowtail text-[20px] text-white desktop:text-[26px]">
               Natural!!
             </p>
-            <h2 className="desktop:text-[32px] w-[200px] text-[26px] font-bold text-white">
+            <h2 className="w-[200px] text-[26px] font-bold text-white desktop:text-[32px]">
               Get Garden Fresh Fruits
             </h2>
           </div>
           <div className="mb-[20px] w-full rounded-[25px] bg-[url('./assets/imgs/sale-img2.png')] bg-cover bg-center bg-no-repeat py-[80px] pl-[15px]">
-            <p className="font-yellowtail desktop:text-[26px] text-fontClr text-[20px]">
+            <p className="font-yellowtail text-[20px] text-fontClr desktop:text-[26px]">
               Offer!!
             </p>
-            <h2 className="desktop:w-[300px] desktop:text-[32px] w-[200px] text-[26px] font-bold text-primary">
+            <h2 className="w-[200px] text-[26px] font-bold text-primary desktop:w-[300px] desktop:text-[32px]">
               Get 10% off on Vegetables
             </h2>
           </div>
@@ -67,14 +67,14 @@ export const Home = () => {
 
       {/* About Us */}
       <section className="bg-doctor py-[40px]">
-        <div className="desktop:flex desktop:items-center container">
+        <div className="container desktop:flex desktop:items-center">
           <img
-            className="tablet:max-w-[500px] desktop:max-w-[600px] mx-auto max-w-[300px]"
+            className="mx-auto max-w-[300px] tablet:max-w-[500px] desktop:max-w-[600px]"
             src={AboutUsImg}
             alt="img"
           />
           <div className="mt-[20px]">
-            <p className="font-yellowtail text-fontClr text-[24px]">About Us</p>
+            <p className="font-yellowtail text-[24px] text-fontClr">About Us</p>
             <h2 className="max-w-[500px] text-[28px] font-bold text-primary">
               We Believe in Working Accredited Farmers
             </h2>
@@ -123,20 +123,20 @@ export const Home = () => {
       <section className="pb-[80px] pt-[50px]">
         <div className="container">
           <div className="mb-[40px] text-center">
-            <p className="font-yellowtail tablet:text-[24px] desktop:text-[30px] text-fontClr text-[20px]">
+            <p className="font-yellowtail text-[20px] text-fontClr tablet:text-[24px] desktop:text-[30px]">
               Categories
             </p>
-            <p className="tablet:text-[26px] desktop:text-[34px] text-[22px] font-extrabold text-primary">
+            <p className="text-[22px] font-extrabold text-primary tablet:text-[26px] desktop:text-[34px]">
               Our Products
             </p>
           </div>
-          <div className="grid-cols-ourProductCols mb-[80px] grid justify-items-center gap-[20px]">
+          <div className="mb-[80px] grid grid-cols-ourProductCols justify-items-center gap-[20px]">
             {OurProductData.map((item) => (
               <OurProductCard key={item.id} {...item} />
             ))}
           </div>
           <div className="mx-auto max-w-[190px]">
-            <NavLink>
+            <NavLink to="/shop">
               <Buttons variant="primary">
                 Load More
                 <ArrowRightIcon />
@@ -149,19 +149,19 @@ export const Home = () => {
       {/* Testimonial */}
       <section className="bg-[url('./assets/imgs/testimonial.png')] bg-cover bg-center bg-no-repeat py-[120px]">
         <div className="container text-center">
-          <p className="text-fontClr font-yellowtail tablet:text-[26px] desktop:30px text-[22px]">
+          <p className="desktop:30px font-yellowtail text-[22px] text-fontClr tablet:text-[26px]">
             Testimonial
           </p>
-          <h2 className="tablet:text-[30px] desktop:text-[34px] mb-[20px] text-[26px] font-extrabold text-primary">
+          <h2 className="mb-[20px] text-[26px] font-extrabold text-primary tablet:text-[30px] desktop:text-[34px]">
             What Our Customer Saying?
           </h2>
           <img
-            className="tablet:max-w-[120px] mx-auto mb-[10px] h-auto w-full max-w-[80px]"
+            className="mx-auto mb-[10px] h-auto w-full max-w-[80px] tablet:max-w-[120px]"
             src={TestimonialProfileImg}
             alt="Profile"
           />
           <Raiting />
-          <p className="tablet:text-[18px] mx-auto mt-[15px] max-w-[700px] text-cityRain">
+          <p className="mx-auto mt-[15px] max-w-[700px] text-cityRain tablet:text-[18px]">
             Simply dummy text of the printing and typesetting industry. Lorem
             Ipsum simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been.
@@ -171,12 +171,12 @@ export const Home = () => {
           </p>
           <p className="tablet:[18px] mb-[15px] text-cityRain">Consumer</p>
           <div className="mx-auto mb-[80px] flex max-w-[50px] items-center gap-[6px]">
-            <span className="bg-weatheredStone block h-[10px] w-[10px] rounded-full"></span>
-            <span className="bg-weatheredStone block h-[10px] w-[10px] rounded-full"></span>
-            <span className="bg-weatheredStone block h-[10px] w-[10px] rounded-full"></span>
+            <span className="block h-[10px] w-[10px] rounded-full bg-weatheredStone"></span>
+            <span className="block h-[10px] w-[10px] rounded-full bg-weatheredStone"></span>
+            <span className="block h-[10px] w-[10px] rounded-full bg-weatheredStone"></span>
           </div>
 
-          <div className="default-silverLake default-t-[2px] flex flex-wrap items-center justify-between gap-y-[20px] pt-[90px]">
+          <div className="default-silverLake default-t-[2px] flex flex-wrap items-center justify-between gap-y-[20px] pt-[90px] desktop:mx-auto desktop:max-w-[1000px]">
             {TestimonialData.map((item) => (
               <TestimonialCard key={item.id} {...item} />
             ))}
@@ -188,73 +188,75 @@ export const Home = () => {
       <section className="bg-primary py-[100px]">
         <div className="container">
           <div>
-            <p className="text-fontClr tablet:text-[28px] desktop:text-[36px] font-yellowtail text-[24px] font-medium">
+            <p className="font-yellowtail text-[24px] font-medium text-fontClr tablet:text-[28px] desktop:text-[36px]">
               Offer
             </p>
             <div className="flex items-center justify-between">
-              <h2 className="tablet:text-[32px] desktop:text-[38px] mt-[10px] text-[26px] font-extrabold text-white">
+              <h2 className="mt-[10px] text-[26px] font-extrabold text-white tablet:text-[32px] desktop:text-[38px]">
                 We Offer Organic For You
               </h2>
-              <span className="tablet:inline-block hidden">
+              <NavLink to="/shop" className="hidden tablet:inline-block">
                 <Buttons variant="secondary">
                   View All Products
                   <ArrowRightIcon />
                 </Buttons>
-              </span>
+              </NavLink>
             </div>
           </div>
-          <div className="grid-cols-ourProductCols mt-[30px] grid justify-items-center gap-[20px]">
+          <div className="mt-[30px] grid grid-cols-ourProductCols justify-items-center gap-[20px]">
             {OfferData.map((item) => (
               <OfferCard key={item.id} {...item} />
             ))}
           </div>
-          <div className="tablet:hidden mx-auto mt-[35px] w-[250px]">
-            <Buttons variant="secondary">
-              View All Products
-              <ArrowRightIcon />
-            </Buttons>
+          <div className="mx-auto mt-[35px] w-[250px] tablet:hidden">
+            <NavLink to="/shop">
+              <Buttons variant="secondary">
+                View All Products
+                <ArrowRightIcon />
+              </Buttons>
+            </NavLink>
           </div>
         </div>
       </section>
 
       {/* Eco Friendly */}
-      <section className="desktop:p-0 py-[30px]">
-        <div className="desktop:flex desktop:justify-between desktop:items-center container">
+      <section className="py-[30px] desktop:p-0">
+        <div className="container desktop:flex desktop:items-center desktop:justify-between">
           <img
-            className="tablet:max-w-[500px] desktop:m-0 mx-auto max-w-[300px]"
+            className="mx-auto max-w-[300px] tablet:max-w-[500px] desktop:m-0 desktop:h-[600px] desktop:max-w-[600px]"
             src={FriendlyImg}
             alt="img"
           />
           <div>
-            <p className="text-fontClr font-yellowtail desktop:m-0 tablet:text-[28px] desktop:text-[32px] mt-[25px] text-[22px]">
+            <p className="mt-[25px] font-yellowtail text-[22px] text-fontClr tablet:text-[24px] desktop:m-0 desktop:text-[28px]">
               Eco Friendly
             </p>
-            <h2 className="tablet:text-[30px] desktop:text-[34px] w-[320px] text-[26px] font-extrabold text-primary">
+            <h2 className="w-[320px] text-[26px] font-extrabold text-primary tablet:text-[30px] desktop:text-[34px]">
               Econis is a Friendly Organic Store
             </h2>
             <div className="max-w-[550px]">
-              <p className="tablet:text-[24px] desktop:text-[26px] mt-[15px] text-[22px] font-medium text-primary">
+              <p className="mt-[15px] text-[20px] font-medium text-primary tablet:text-[22px] desktop:text-[24px]">
                 Start with Our Company First
               </p>
-              <p className="tablet:text-[18px] desktop:text-[20px] text-cityRain">
+              <p className="text-cityRain desktop:text-[18px]">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptat
                 accusantium doloremque laudantium. Sed ut perspiciatis.
               </p>
             </div>
             <div className="max-w-[550px]">
-              <p className="tablet:text-[24px] desktop:text-[26px] mt-[15px] text-[22px] font-medium text-primary">
+              <p className="mt-[15px] text-[20px] font-medium text-primary tablet:text-[22px] desktop:text-[24px]">
                 Learn How to Grow Yourself
               </p>
-              <p className="tablet:text-[18px] desktop:text-[20px] text-cityRain">
+              <p className="text-cityRain desktop:text-[18px]">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptat
                 accusantium doloremque laudantium. Sed ut perspiciatis.
               </p>
             </div>
             <div className="max-w-[550px]">
-              <p className="tablet:text-[24px] desktop:text-[26px] mt-[15px] text-[22px] font-medium text-primary">
+              <p className="mt-[15px] text-[20px] font-medium text-primary tablet:text-[22px] desktop:text-[24px]">
                 Farming Strategies of Today
               </p>
-              <p className="tablet:text-[18px] desktop:text-[20px] text-cityRain">
+              <p className="text-cityRain desktop:text-[18px]">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptat
                 accusantium doloremque laudantium. Sed ut perspiciatis.
               </p>
@@ -264,7 +266,7 @@ export const Home = () => {
       </section>
 
       {/* Eco Friendly */}
-      <section className="tablet:py-[100px] bg-organicBgClr tablet:flex tablet:items-center tablet:justify-between tablet:gap-[35px] desktop:gap-[70px]">
+      <section className="bg-organicBgClr tablet:flex tablet:items-center tablet:justify-between tablet:gap-[35px] tablet:py-[100px] desktop:gap-[70px]">
         <div className="mt-[35px] flex w-full justify-center bg-[url('./assets/imgs/organik-img.png')] bg-cover bg-center bg-no-repeat py-[150px]">
           <Buttons variant="default">Organic Juice</Buttons>
         </div>
@@ -279,24 +281,24 @@ export const Home = () => {
       {/* Content */}
       <section>
         <div className="container py-[90px]">
-          <p className="text-fontClr font-yellowtail text-[20px]">News</p>
+          <p className="font-yellowtail text-[20px] text-fontClr">News</p>
           <div className="flex items-center justify-between">
-            <h2 className="tablet:max-w-[350px] max-w-[300px] text-[24px] font-bold text-primary">
+            <h2 className="max-w-[300px] text-[24px] font-bold text-primary tablet:max-w-[350px]">
               Discover weekly content about organic food, & more
             </h2>
-            <span className="tablet:inline-block hidden">
+            <NavLink to="/news" className="hidden tablet:inline-block">
               <Buttons variant="border">
                 More News <ArrowRightIcon />
               </Buttons>
-            </span>
+            </NavLink>
           </div>
           <div className="tablet:flex tablet:justify-between tablet:gap-[20px]">
-            <div className="desktop:relative desktop:w-full mt-[20px] rounded-lg bg-[url('./assets/imgs/content-img.png')] bg-cover bg-center bg-no-repeat px-[20px] py-[25px]">
+            <div className="mt-[20px] rounded-lg bg-[url('./assets/imgs/content-img.png')] bg-cover bg-center bg-no-repeat px-[20px] py-[25px] desktop:relative desktop:w-full">
               <div className="mb-[35px] ml-[16px] flex h-[50px] w-[50px] flex-col items-center rounded-full bg-white">
                 <p className="font-semibold text-primary">25</p>
                 <p className="font-semibold text-primary">Nov</p>
               </div>
-              <div className="desktop:absolute bottom-[-40px] left-[50px] mx-auto rounded-[10px] bg-white px-[20px] py-[25px] shadow-md">
+              <div className="bottom-[-40px] left-[50px] mx-auto rounded-[10px] bg-white px-[20px] py-[25px] shadow-md desktop:absolute">
                 <span className="flex items-center gap-2">
                   <ContentAuthorIcon />
                   <p className="text-[14px] text-primary">By Rachi Card</p>
@@ -314,12 +316,12 @@ export const Home = () => {
                 </Buttons>
               </div>
             </div>
-            <div className="desktop:relative desktop:w-full desktop:h-[350px] mt-[20px] rounded-lg bg-[url('./assets/imgs/content-img2.png')] bg-cover bg-center bg-no-repeat px-[20px] py-[25px]">
+            <div className="mt-[20px] rounded-lg bg-[url('./assets/imgs/content-img2.png')] bg-cover bg-center bg-no-repeat px-[20px] py-[25px] desktop:relative desktop:h-[350px] desktop:w-full">
               <div className="mb-[35px] ml-[16px] flex h-[50px] w-[50px] flex-col items-center rounded-full bg-white">
                 <p className="font-semibold text-primary">25</p>
                 <p className="font-semibold text-primary">Nov</p>
               </div>
-              <div className="desktop:absolute bottom-[-40px] left-[50px] mx-auto rounded-[10px] bg-white px-[20px] py-[25px] shadow-md">
+              <div className="bottom-[-40px] left-[50px] mx-auto rounded-[10px] bg-white px-[20px] py-[25px] shadow-md desktop:absolute">
                 <span className="flex items-center gap-2">
                   <ContentAuthorIcon />
                   <p className="text-[14px] text-primary">By Rachi Card</p>
@@ -338,10 +340,12 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="tablet:hidden mx-auto mt-[25px] w-[200px]">
-            <Buttons variant="border">
-              More News <ArrowRightIcon />
-            </Buttons>
+          <div className="mx-auto mt-[25px] w-[200px] tablet:hidden">
+            <NavLink to="news">
+              <Buttons variant="border">
+                More News <ArrowRightIcon />
+              </Buttons>
+            </NavLink>
           </div>
         </div>
       </section>
